@@ -2193,8 +2193,8 @@ methods:
       a force applied instantly, such as an explosion or collision.
 
       If the part is owned by the server, this function must be called on a
-      server `Class.Script`. If the part is owned by a client, this function can
-      be called on a `Class.LocalScript` or server `Class.Script`.
+      server `Class.Script`. Alternatively, you can use `Class.BasePart:SetNetworkOwner()|SetNetworkOwner(nil)`. If the part is owned by a client, this function can
+      be called on a `Class.LocalScript` or server `Class.Script`. Or, set the
     code_samples:
     parameters:
       - name: impulse
